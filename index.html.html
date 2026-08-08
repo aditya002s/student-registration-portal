@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form </title>
+</head>
+<body>
+    <header>
+        <centre> <h1> Registration Form</h1> </centre>
+        <hr>
+    </header>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required 
+                        autocomplete="name"
+                    >
+                </p>
+                <p>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                    >
+                </p>
+                <p>
+                    <span>Gender:</span>
+                    <input 
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male"
+                    required
+                    >
+                    <label for="male">Male</label>
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    >
+                    <label for="female">Female</label>
+                    <input 
+                        type="radio"
+                        id="other"
+                        name="gender"
+                        value="other"
+                    >
+                    <label for="other">Other</label>
+                </p>  
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="email">Emai:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                        required
+                        autocomplete="email"
+                    >
+                </p>
+                <p>
+                    <label for="phone">Contact Number:</label><br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter Your Phone Number"
+                        required
+                        autocomplete="tel"
+                    >
+                </p>
+                <p>
+                    <label for="address">Address</label><br>
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        cols="40"
+                        placeholder="Enter your complete address"
+                        required
+                    ></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> Academic Information</legend>
+                <p>
+                    <label for="course"></label>
+                    <select id="course" name="course" required>
+                        <option value="">--Select Course --</option>
+                        <option value="cse">Computer Science Engineering</option>
+                        <option value="aiml">CSE - Artificial Intelligence & Machine Learning</option>
+                        <option value="ece">Electronics & Communication Engineering</option>
+                        <option value="it">Information Technology</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="semester">Current Semester:</label><br>
+                    <select id="semester" name="semester" required>
+                        <option value="">-- Select Semester --</option>
+                        <option value="1">1st Semester </option>
+                        <option value="2">2nd Semester</option>
+                        <option value="3">3rd Semester</option>
+                         <option value="4">4th Semester</option>
+                        <option value="5">5th Semester</option>
+                        <option value="6">6th Semester</option>
+                        <option value="7">7th Semester</option>
+                        <option value="8">8th Semester</option>
+                    </select>
+                </p>
+                <p>
+                    <span>Technical Skills</span>
+                    <input
+                        type="checkbox"
+                        id="html"
+                        name="skills"
+                        value="html"
+                    >
+                    <label for="html">HTML</label>
+                    <input 
+                        type="checkbox"
+                        id="css"
+                        name="skills"
+                        value="css"
+                    >
+                    <label for="css">CSS</label>
+                    <input 
+                        type="checkbox"
+                        id="javascript"
+                        name="skills"
+                        value="javascript"
+                    >
+                    <label for="javascript">JAVASCRIPT</label>
+                    <input
+                        type="checkbox"
+                        id="python"
+                        name="skills"
+                        value="python"
+                    >
+                    <label for="python">PYTHON</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Account Information</legend>
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                        autocomplete="new-password"
+                    >
+                </p>
+                <p>
+                    <label for="confirmPassword">Confirm Password:</label><br>
+                    <input 
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        minlength="8"
+                        required  
+                        autocomplete="new-password"
+                    >                  
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <p>
+                    <label for="profilePicture">Profile Picture</label><br>
+                    <input 
+                        type="file"
+                        id="profilePicture"
+                        name="profilePicture"
+                        accept="image/*"
+                    >
+                </p>
+                <p>
+                    <label for="about">About Yourself</label><br>
+                    <textarea 
+                        id="about"
+                        name="about"
+                        rows="5"
+                        cols="40"
+                        placeholder="Tell us something about yourself.."
+                        ></textarea>                  
+                </p>
+            </fieldset>
+            <p>
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+                <label for="terms">
+                    I agree to the Terms and Conditions.
+                </label>
+            </p>
+            <button type="submit">Register</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Registration Portal</p>
+    </footer>
+    
+</body>
+</html>
